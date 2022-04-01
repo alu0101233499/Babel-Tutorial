@@ -1,0 +1,8 @@
+{
+  "firstName": "John",
+  "lastName": "Johnson",
+  "nickname": "Json",
+  "age": 29,
+  "job": "musician",
+  "instrument": "violin"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "babel-tutorial",
+  "version": "1.0.0",
+  "description": "Babel configuration tutorial",
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/eslint-parser": "^7.17.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.25",
+    "babel-jest": "^27.5.1",
+    "core-js": "^3.21.1",
+    "eslint": "^8.12.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.5.1",
+    "jsdoc": "^3.6.6"
+  },
+  "scripts": {
+    "test": "jest ./ --silent",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0101233499/Babel-Tutorial.git"
+  },
+  "keywords": [
+    "PAI",
+    "Javascript",
+    "Lab",
+    "JSON",
+    "Modules",
+    "Babel"
+  ],
+  "author": "Lorenzo Gabriel Pérez González",
+  "license": "ISC"
+}
