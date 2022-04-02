@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "jest ./ --silent --coverage",
-    "lint": "eslint .",
+    "lint": "eslint ./",
     "doc": "jsdoc ./"
   },
   "repository": {

@@ -14,7 +14,7 @@
  *
  */
 
-import {JSON_OBJECT, showData} from './john-data.js';
+import {JOHN_ERROR, JSON_OBJECT, showData} from './john-data.js';
 
 const DATA = 'firstName: John\nlastName: Johnson\nnickname: Json\n' +
   'age: 29\njob: Musician\ninstrument: Violin\n';
@@ -22,5 +22,6 @@ const DATA = 'firstName: John\nlastName: Johnson\nnickname: Json\n' +
 describe('Tests of john-data.js', () => {
   test('Tests for showData', () => {
     expect(showData(JSON_OBJECT)).toEqual(DATA);
+    expect(() => showData()).toThrow(JOHN_ERROR);
   });
 });

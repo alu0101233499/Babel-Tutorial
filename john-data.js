@@ -18,14 +18,17 @@
 
 import * as fs from 'fs';
 import * as process from 'process';
-
 const myArgs = process.argv.slice(2);
+
 const FILE = fs.readFileSync('./json/John.json', 'utf8');
 export const JSON_OBJECT = JSON.parse(FILE);
 
 const ERROR_MESSAGE = 'Bad input. ' +
   'The correct way to execute the program is: ' +
   'node john-data.js';
+export const JOHN_ERROR = 'Bad input. ' +
+  'The correct way to execute the function is: ' +
+  'showData(johnJsonObject)';
 
 /**
  * This function shows the json's data.
@@ -33,6 +36,10 @@ const ERROR_MESSAGE = 'Bad input. ' +
  * @return {String} String with the information about John.
  */
 export const showData = function(jsonObject) {
+  if (typeof (jsonObject) !== 'object') {
+    throw new Error(JOHN_ERROR);
+  }
+
   let data = '';
   for (const property in jsonObject) {
     data += `${property}: ${jsonObject[property]}` + '\n';
