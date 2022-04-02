@@ -13,8 +13,9 @@
     "jsdoc": "^3.6.6"
   },
   "scripts": {
-    "test": "jest ./ --silent",
-    "lint": "eslint ."
+    "test": "jest ./ --silent --coverage",
+    "lint": "eslint .",
+    "doc": "jsdoc ./"
   },
   "repository": {
     "type": "git",
