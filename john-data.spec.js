@@ -17,7 +17,7 @@
 import {JSON_OBJECT, showData} from './john-data.js';
 
 const DATA = 'firstName: John\nlastName: Johnson\nnickname: Json\n' +
-  'age: 29\njob: musician\ninstrument: violin\n';
+  'age: 29\njob: Musician\ninstrument: Violin\n';
 
 describe('Tests of john-data.js', () => {
   test('Tests for showData', () => {

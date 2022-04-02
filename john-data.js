@@ -30,7 +30,7 @@ const ERROR_MESSAGE = 'Bad input. ' +
 /**
  * This function shows the json's data.
  * @param {Object} jsonObject Object with John Johnson's information.
- * @returns 
+ * @return {String} String with the information about John.
  */
 export const showData = function(jsonObject) {
   let data = '';
